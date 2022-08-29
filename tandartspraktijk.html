@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tandartsafspraak</title>
+  </head>
+  <body>
+    <h3>Tandartsafspraak</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut tempor sem, a vulputate metus. In hac habitasse platea dictumst. Maecenas in finibus orci, sit amet placerat enim.
+      Duis eget dictum ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi fermentum ultrices maximus. Curabitur mollis tempus quam sit
+      amet bibendum. Maecenas et eros dui. Cras in posuere turpis, id pulvinar turpis. Proin dapibus sit amet sapien quis euismod. Cras in iaculis velit.
+    </p>
+      <div>
+        <img src="afbeeldingen/aap_1.jpg" alt="afbeelding van een aap" title="Aap" width="300">
+        <img src="afbeeldingen/aap_2.jpg" alt="afbeelding van een aap" title="Aap" width="300">
+        <img src="afbeeldingen/aap_3.jpg" alt="afbeelding van een aap" title="Aap" width="300" height="300">
+      </div>
+    <br><br>
+    <form id="contactform" action="https://formspree.io/f/mgeqedko" method="post">
+      <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+        <table width="500" border="0">
+          <tr>
+            <td><label for="naam">Naam</label></td>
+            <td><input id="naam" type="text" name="naam" placeholder="voor- en achternaam" required></td>
+          </tr>
+          <tr>
+            <td><label for="aanhef">Aanhef</label></td>
+            <td>
+              <select id="aanhef" name="aanhef">
+                <option value="dhr.">Dhr.</option>
+                <option value="mevr.">Mevr.</option>
+                <option value="anders">Anders</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="geboortedatum">Geboortedatum</label></td>
+            <td><input id="geboortedatum" type="date" name="geboortedatum"></td>
+          </tr>
+          <tr>
+            <td><label for="telefoonnummer">Telefoonnummer<label></td>
+            <td><input id="telefoonnummer" type="tel" name="telefoonnummer" placeholder="+316" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail</label></td>
+            <td><input type="email" name="email"></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Beschrijving van de klachten</legend>
+        <table width="800" border="0" >
+          <tr>
+            <td>Kies één of meerdere klachten</td>
+            <td>
+              <input type="checkbox" name="bloeden" value="ja">Bloeden
+              <input type="checkbox" name="pijn" value="ja">Pijn
+              <input type="checkbox" name="zwelling" value="ja">Zwelling
+              <input type="checkbox" name="verkleuring" value="ja">Verkleuring
+            </td>
+          </tr>
+          <tr>
+            <td>Voeg, indien relevant, een foto toe van de klachten</td>
+            <td><input type="file" name="klachten" accept="jpg" accept="png"></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Toelichting van de klachten</legend>
+        <table width="800" border="0">
+          <tr>
+            <td>Toelichting</td>
+            <td><input type="text" name="toelichting" maxlength="1500"></td>
+          </tr>
+          <tr>
+            <td>Wanneer zijn de klachten begonnen</td>
+            <td><input type="date" name="start klachten"></td>
+          </tr>
+          <td></td>
+        </table>
+      </fieldset>
+      <br>
+      <input type="submit" value="verstuur">
+    </form>
+  </body>
+</html>
